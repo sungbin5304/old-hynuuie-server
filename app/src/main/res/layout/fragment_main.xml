@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:ignore="MissingConstraints,RtlSymmetry,Autofill,TextFields">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_file"
+        android:layout_marginTop="@dimen/margin_half"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="horizontal"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="24dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/corner_drawable"
+            android:elevation="@dimen/margin_default"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/margin_default"
+            android:paddingTop="@dimen/margin_half"
+            android:paddingEnd="@dimen/margin_default"
+            android:paddingBottom="@dimen/margin_default">
+
+            <View
+                android:id="@+id/line_view"
+                android:layout_width="50dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_layout"
+                android:backgroundTint="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/tv_sort_type"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/nanumgothic"
+                android:layout_marginTop="@dimen/half_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sort_type"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:textColorHint="@color/colorAccent"
+                android:fontFamily="@font/nanumgothic"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/input"
+                android:maxLines="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_search_keyword" />
+
+            <RadioGroup
+                android:id="@+id/rg_sort_type"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/sort_ganada"
+                    android:id="@+id/rb_sort_ganada"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:text="@string/sort_danaga"
+                    android:id="@+id/rb_sort_danaga"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg_sort_folder_type"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/sort_loader"
+                    android:id="@+id/rb_sort_folder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:buttonTint="@color/colorAccent"
+                    android:fontFamily="@font/nanumgothic"
+                    android:textColor="@color/colorAccent"
+                    android:layout_weight="1"
+                    android:text="@string/sort_file"
+                    android:id="@+id/rb_sort_file"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

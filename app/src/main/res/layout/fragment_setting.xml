@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_default"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,MissingConstraints,RtlSymmetry,Autofill,TextFields">
+
+    <ImageView
+        android:id="@+id/iv_color_lens"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_color_lens_white_24dp"
+        android:tint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_app_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_default"
+        android:fontFamily="@font/nanumgothic"
+        android:gravity="center"
+        android:text="@string/set_app_theme"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_color_lens" />
+
+    <ImageView
+        android:id="@+id/iv_circle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_circle_white_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin_default"
+        android:id="@+id/iv_number"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_format_list_numbered_white_24dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@+id/iv_color_lens" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginStart="@dimen/margin_default"
+        android:id="@+id/tv_file_count"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:fontFamily="@font/nanumgothic"
+        android:gravity="center"
+        android:text="@string/show_check_file_count"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_number"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_theme" />
+
+    <ToggleButton
+        android:layout_marginTop="@dimen/margin_default"
+        android:checked="true"
+        android:textOn="@string/string_on"
+        android:textOff="@string/string_off"
+        android:id="@+id/tb_off_file_count"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:buttonTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_circle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

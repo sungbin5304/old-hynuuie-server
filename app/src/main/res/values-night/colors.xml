@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#484848</color>
+
+    <color name="colorLightGray">#f5f5f5</color>
+
+    <color name="colorLogoText">#007088</color>
+    <color name="colorLogoBg">#72E6FF</color>
+
+    <color name="bg_welcome_slide">#f64c73</color>
+    <color name="bg_permission_slide">#c873f4</color>
+    <color name="bg_start_slide">#3395ff</color>
+
+    <color name="dot_dark_welcome_slide">#d1395c</color>
+    <color name="dot_dark_permission_slide">#a854d4</color>
+    <color name="dot_dark_start_slide">#2278d4</color>
+
+    <color name="dot_light_welcome_slide">#f98da5</color>
+    <color name="dot_light_permission_slide">#e4b5fc</color>
+    <color name="dot_light_start_slide">#93c6fd</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_welcome_slide</item>
+        <item>@color/dot_light_permission_slide</item>
+        <item>@color/dot_light_start_slide</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_welcome_slide</item>
+        <item>@color/dot_dark_permission_slide</item>
+        <item>@color/dot_dark_start_slide</item>
+    </array>
+</resources>

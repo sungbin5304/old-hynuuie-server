@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "857558815268",
+    "firebase_url": "https://hyunnie-server.firebaseio.com",
+    "project_id": "hyunnie-server",
+    "storage_bucket": "hyunnie-server.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857558815268:android:4bb3604f9224a96a99beb1",
+        "android_client_info": {
+          "package_name": "com.sungbin.hyunnie.server"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857558815268-gsh9b4jjoeinaumi6he041nc2k8kd0o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuY2KoqECtaFYYXvyn458EKToKszmQcgk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857558815268-gsh9b4jjoeinaumi6he041nc2k8kd0o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

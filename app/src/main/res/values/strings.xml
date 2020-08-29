@@ -1,0 +1,75 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">혀니 서버</string>
+
+    <string name="ellipsis">&#8230;</string>
+
+    <string name="string_next">다음</string>
+    <string name="string_start">시작하기</string>
+
+    <string name="welcome_slide_title">환영합니다!</string>
+    <string name="welcome_slide_desc">혀니서버에 오신걸 환영합니다.</string>
+
+    <string name="permission_slide_title">권한 설정</string>
+    <string name="permission_slide_desc">혀니서버를 이용하려면\n다음과 같은 권한들이 필요해요.</string>
+
+    <string name="login_slide_title">로그인</string>
+    <string name="login_slide_desc">혀니서버를 이용하려면 로그인이 필요해요.</string>
+
+    <string name="start_slide_title">준비 끝!</string>
+    <string name="start_slide_desc">모든 준비가 끝났어요!\n혀니서버를 재밌게 즐겨주세요.</string>
+
+    <string name="give_permission">권한 허용하기</string>
+    <string name="storage_permission">저장소 접근 권한</string>
+    <string name="why_need_storage_permission">서버에서 파일을 다운로드 하기 위해\n해당 권한이 필요해요.</string>
+
+    <string name="device_permission">전화 접근 권한</string>
+    <string name="why_need_device_permission">서버 접속 기기의 정보를 확인하기 위해\n해당 권한이 필요해요.</string>
+    <string name="string_id">아이디</string>
+    <string name="string_password">비밀번호</string>
+
+    <string name="dont_make_call">혀니서버에서는 전화를 걸 지 않아요.</string>
+    <string name="need_permission_agree">권한 허용이 필요해요.</string>
+    <string name="need_permission_to_start">혀니서버를 시작하시려면 모든 권한의 사용을 허락해주셔야 해요.</string>
+    <string name="information_permission">권한 사용 안내</string>
+    <string name="string_ok">확인</string>
+    <string name="load_server" tools:ignore="TypographyEllipsis">서버 접속중...</string>
+    <string name="load_information">회원님 정보와\n서버 정보를 불러오고 있어요.</string>
+
+    <string name="copyright">© 2020 SungBin &amp; Hyunnie. all rights reserved.</string>
+    <string name="success_load_user">유저 정보를 성공적으로 불러왔어요.</string>
+    <string name="welcome_login">처음이시네요! 환영해요 :)</string>
+    <string name="ban_device">정지당한 기기네요 :(\n혀니서버에 입장하실 수 없어요.</string>
+
+    <string name="string_main">메인</string>
+    <string name="string_download">다운로드</string>
+    <string name="string_setting">환경설정</string>
+    <string name="string_default">무료 이용중</string>
+    <string name="file_name">파일 이름</string>
+    <string name="count_file">파일 개수</string>
+    <string name="string_loading">불러오는중…</string>
+    <string name="string_downloading">다운로드중…</string>
+    <string name="download_background">백그라운드에서 다운</string>
+    <string name="downloading_background">백그라운드에서 다운로드를 진행합니다.</string>
+    <string name="string_cancel">취소</string>
+    <string name="cancel_download">다운로드를 취소했습니다.</string>
+    <string name="downloading_file">{name} 파일을 다운로드 중입니다…</string>
+    <string name="success_download">{name} 파일 다운로드 완료 :)</string>
+    <string name="string_exit">종료</string>
+    <string name="exit_app_ask">정말 혀니서버 앱을 종료하실 거에요?</string>
+    <string name="sort_type">정렬 방식</string>
+    <string name="sort_ganada">ㄱㄴㄷ순 정렬</string>
+    <string name="sort_danaga">ㄷㄴㄱ순 정렬</string>
+    <string name="set_app_theme">앱 테마 설정</string>
+    <string name="show_check_file_count">파일 개수 체크 표시</string>
+    <string name="string_on">켜기</string>
+    <string name="string_off">끄기</string>
+    <string name="restart_apply_theme">재시작시 테마가 적용됩니다.</string>
+    <string name="load_file">파일 준비중</string>
+    <string name="error_download">다운로드 실패 :(</string>
+    <string name="cant_downloaded">다운로드 하려는 항목의 이름과 같은 폴더가 존재해 다운로드를 할 수 없어요</string>
+    <string name="sort_loader">폴더 먼저</string>
+    <string name="sort_file">파일 먼저</string>
+    <string name="input_search_keyword">검색어 입력</string>
+    <string name="need_internet">인터넷 연결이 필요해요!</string>
+
+</resources>

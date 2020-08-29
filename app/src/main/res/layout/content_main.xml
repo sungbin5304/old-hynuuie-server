@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:ignore="MissingConstraints,RtlSymmetry">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_alignParentTop="true"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:fontFamily="@font/nanumgothic"
+                    android:id="@+id/toolbar_title"
+                    android:text="@string/app_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+                <TextView
+                    android:fontFamily="@font/nanumgothic"
+                    android:paddingTop="@dimen/margin_twice_half"
+                    android:paddingStart="@dimen/margin_default"
+                    android:id="@+id/toolbar_subtitle"
+                    android:text="@string/string_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        app:layout_constraintTop_toBottomOf="@id/appbar_layout"
+        app:layout_constraintBottom_toTopOf="@id/bottombar"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="00.5dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="#9e9e9e"
+        app:layout_constraintBottom_toTopOf="@id/bottombar"/>
+
+    <com.sungbin.hyunnie.server.widget.bottombar.SmoothBottomBar
+        android:id="@+id/bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:backgroundColor="#fff"
+        app:iconTint="@color/colorAccent"
+        app:itemFontFamily="@font/nanumgothic"
+        app:iconTintActive="@color/colorPrimaryDark"
+        app:indicatorColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"
+        app:textColor="@color/colorPrimaryDark"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

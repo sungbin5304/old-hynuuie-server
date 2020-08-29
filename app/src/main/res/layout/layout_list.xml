@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ly_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:focusableInTouchMode="true"
+    android:background="#fff"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_marginStart="@dimen/margin_half"
+        android:layout_gravity="center"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_folder_primary_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:fontFamily="@font/nanumgothic"
+            android:textStyle="bold"
+            android:id="@+id/tv_file_name_full"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:textSize="16sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/file_name"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_half"/>
+
+        <TextView
+            android:fontFamily="@font/nanumgothic"
+            android:textStyle="bold"
+            android:id="@+id/tv_file_name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:textSize="16sp"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="@string/file_name"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_half"/>
+
+        <TextView
+            android:fontFamily="@font/nanumgothic"
+            android:id="@+id/tv_file_count"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:maxLines="1"
+            android:textSize="13sp"
+            android:layout_marginBottom="@dimen/margin_half"
+            android:textColor="@color/colorAccent"
+            android:layout_marginEnd="@dimen/margin_half"
+            android:text="@string/count_file"
+            android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/margin_half"/>
+
+    </LinearLayout>
+
+</LinearLayout>
